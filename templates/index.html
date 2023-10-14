@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Job Finder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn0">Register</button>
+                    <button class="btn1 mx-2">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1>Here Are The Most <br>Interesting Jobs</h1>
+                    <input type=" text" placeholder="Job Title or Keyword">
+                    <button class="btn2 mt-5">Find Job</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ceta py-5">
+        <div class="container-fluid py-5 text-center">
+            <p class="red">FEATURED TOURS PACKAGES</p>
+            <h1>Browse Top Categories</h1>
+            <div class="row py-5">
+                <div class="col-lg-11 m-auto pt-3">
+                    <div class="row py-5">
+                        <div class="col-lg-3 pt-3">
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/Cate1.JPG') }}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Resume Building</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-3">
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/cate8.JPG') }}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Configure profile</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-3" >
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/cate7.JPG') }}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Cloud management</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-3">
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/cate6.JPG')}}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Search job</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col-lg-3 pt-3">
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/Cate5.JPG') }}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Earn money</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-3">
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/Cate4.JPG')}}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Design & Creative</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-3">
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/Cate3.JPG')}}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Improve your team</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-3">
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <img src="{{ url_for('static', filename='/Images/Cate2.JPG')}}" class="img-fluid my-3" alt="">
+                                    <h6>
+                                        Improve yourself</h6>
+                                    <h6 class="red">(786)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-lg-5 m-auto">
+                            <button class="btn3">BROWSE ALL SECTORS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume py-5 text-center text-white">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-10 m-auto">
+                    <p class="pb-3">FEATURED TOUR PACKAGES</p>
+                    <h1>Make a Difference with your Resume!!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 m-auto">
+                    <button class="btn3">UOLOAD YOUR RESUME!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="job py-5">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-7 pb-2">
+                    <p class="red pt-5">WHAT WE ARE DOING</p>
+                    <h1>18k Talented People are Getting Jobs!</h1>
+                    <p class="py-4" style="font-weight: 700;">We provide the best online job searches for you!
+                    </p>
+                    <p>Apart from the basic recruitment tools like posting jobs,receiving applicants,<br>
+                        we support the concept of advanced tools like a single page to view postings <br>
+                        and the number of applicants categorized into possibity of shortlist/joining <br>
+                        and provide related analytics </p>
+                    <button class="btn4 mt-3">Post a Job</button>
+                </div>
+                <div class="col-lg-5">
+                    <img src="{{ url_for('static',filename='/Images/2.jpg')}}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="apply py-5">
+        <div class="container text-white text-center py-5">
+            <p class="red">APPLY PROCESS</p>
+            <h1>How it works</h1>
+            <div class="row py-5">
+                <div class="col-lg-4 pt-2">
+                    <div class="card p-3">
+                        <div class="card-body text-center">
+                            <div class="cir1 pt-3 mb-3">
+                                <img src="{{ url_for('static',filename='/Images/cate4.JPG')}}" class="img-fluid" alt="">
+                            </div>
+                            <h2>1. Skill and Personality Assessments</h2>
+                            <p class="py-3">Offer skill tests or personality assessments to help job seekers better
+                                understand their strengths and weaknesses. These assessments can also be shared with
+                                potential employers to showcase qualifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-2">
+                    <div class="card p-3">
+                        <div class="card-body text-center">
+                            <div class="cir1 pt-3 mb-3">
+                                <img src="{{ url_for('static',filename='/Images/cate3.JPG')}}" class="img-fluid" alt="">
+                            </div>
+                            <h2>2. Networking and Community Building
+                            </h2>
+                            <p class="py-3">Create a networking section where users can connect with industry
+                                professionals, mentors, and peers. Encourage discussions, forums, or virtual events to
+                                foster a sense of community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-2">
+                    <div class="card p-3">
+                        <div class="card-body text-center">
+                            <div class="cir1 pt-3 mb-3">
+                                <img src="{{ url_for('static',filename='/Images/cate5.JPG')}}" class="img-fluid" alt="">
+                            </div>
+                            <h2>3. Salary Insights </h2>
+                            <p class="py-3">Provide data and resources on salary ranges for various job positions and
+                                locations. Include guides on how to negotiate salary and benefits effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider py-5">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static',filename='/Images/Capture.JPG')}}" class="img-fluid avatar mb-4" alt="...">
+                                <h4>Marget Lawson</h4>
+                                <p>Creative Dirctor</p>
+                                <p class="parac">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
+                                    autem architecto veniam, similique, incidunt assumenda tempore nulla, fuga officia
+                                    explicabo placeat ullam. Saepe, ad fuga!</p>
+                                <button class="btn5 mt-3">Contact</button>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static',filename='/Images/car2.JPG')}}" class="img-fluid mb-4 avatar" alt="...">
+                                <h4>Marget Lawson</h4>
+                                <p>Creative Dirctor</p>
+                                <p class="parac">"When something is important enough, you do it even if the odds are not
+                                    in your favor."</p>
+                                <button class="btn5 mt-3">Contact</button>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static',filename='/Images/car2.JPG')}}" class="img-fluid mb-4 avatar" alt="...">
+                                <h4>Marget Lawson</h4>
+                                <p>Creative Dirctor</p>
+                                <p class="parac">"For me, it matters that we drive technology as an equalizing force, as
+                                    an enabler for everyone around the world".</p>
+                                <button class="btn5 mt-3">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer py-5">
+        <div class="container-fluid py-5">
+            <div class="row ">
+                <div class="col-lg-10 m-auto">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3 class="py-5">ABOUT US</h3>
+                            <p>Welcome to our portal, where opportunities meet talent. Our mission is to connect job
+                                seekers with their dream careers and help employers find the perfect candidates to grow
+                                their teams.
+                                we are dedicated to revolutionizing the job search experience. Our team of passionate
+                                professionals understands the challenges that both job seekers and employers face.</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h3 class="py-5">CONTACT INFO</h3>
+                            <p>Address: <br>
+                                no.1,<br>
+                                1st street, <br>
+                                Erode(Dt),<br>
+                                TamilNadu.
+                            </p>
+                            <p class="link pt-3">phone: +91 93******117</p>
+                            <p class="link">E-mail: name@gmail.com</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h3 class="py-5">IMPORTANT LINKS</h3>
+                            <p class="link">View Project</p>
+                            <p class="link">Contact us</p>
+                            <p class="link">Testimonial</p>
+                            <p class="link">Properties</p>
+                            <p class="link">Support</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h3 class="py-5">NEWSLETTER</h3>
+                            <p>Heaven fruitful doesn't over
+                                lesser in days. Appear creeping.
+                            </p>
+                            <input type="text" placeholder="Enter Your Email">
+                            <button>Go</button>
+                        </div>
+                        <div class="pt-3">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <footer class="bg-dark" style="
+        background: linear-gradient(
+          180deg,
+          rgba(52, 58, 64, 1) 0%,
+          rgba(52, 58, 64, 1) 100%
+        );
+      ">
+        <p class="container text-center text-white-50 my-2" style="color: aliceblue ">
+            Made by PONSANJAI B
+        </p>
+        <!-- Social Icons -->
+        <div class="item" style="padding-bottom: 20px ;">
+            <ul class="icon-list">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/ponsanjai-b-cse" class="fa fa-linkedin" target="_blank"
+                        style="color: aliceblue"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
